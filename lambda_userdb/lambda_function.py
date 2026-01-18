@@ -6,8 +6,8 @@ from botocore.exceptions import ClientError
 import concurrent.futures
 
 def get_db_credentials():
-    secret_name = "prod/AppBeta/Mysql"
-    region_name = "us-east-2"
+    secret_name = ""
+    region_name = ""
     client = boto3.client("secretsmanager", region_name=region_name)
     try:
         response = client.get_secret_value(SecretId=secret_name)
