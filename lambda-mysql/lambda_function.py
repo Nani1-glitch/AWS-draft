@@ -7,8 +7,8 @@ import concurrent.futures
 
 # Get credentials from AWS Secrets Manager
 def get_db_credentials():
-    secret_name = "prod/AppBeta/Mysql"
-    region_name = "us-east-1"
+    secret_name = ""
+    region_name = ""
     client = boto3.client("secretsmanager", region_name=region_name)
 
     try:
