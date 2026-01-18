@@ -3,7 +3,7 @@ import random
 from faker import Faker
 
 # Set output path
-output_path = "/Users/nithinrajulapati/Desktop/mediscan_records.csv"
+output_path = ""
 
 # Initialize Faker
 fake = Faker()
@@ -36,4 +36,4 @@ with open(output_path, mode='w', newline='') as file:
     for _ in range(num_records):
         writer.writerow(generate_mediscan_data())
 
-print(f"✅ File generated: {output_path}")
+print(f"File generated: {output_path}")
